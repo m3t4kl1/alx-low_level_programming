@@ -19,3 +19,4 @@ void print_diagsums(int *a, int size)
 		valuej += *(p + j);
 	}
 	printf("%d, %d\n", valuei, valuej);
+	}
