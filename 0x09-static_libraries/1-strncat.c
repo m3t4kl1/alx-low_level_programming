@@ -9,5 +9,18 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *i = dest;
+	char *temp = dest;
+
+	for (; *temp != '\0'; temp++)
+		;
+	for (; *src != '\0'; src++)
+	{
+		if (n == 0)
+			break;
+		*temp = *src;
+		temp++;
+		n--;
+	}
+	return (dest);
+}
 
